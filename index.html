@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="right">
+            <h1>Shop Now</h1>
+            <input type="text" placeholder="Search for products" id="search">
+            <img src="./icons8-search-30 (1).png" alt="" id="icon">
+        </div>
+        <div class="left">
+            <button onclick="profilePage()">
+                <img src="./icons8-user-30.png" alt="">Profile
+            </button>
+            <button onclick="wishlistPage()">
+                <img src="./icons8-heart-30.png" alt="">Wishlist
+            </button>
+            <button onclick="bagPage()">
+                <img src="./icons8-bag-64.png" alt="">My Bag
+            </button>
+        </div>
+    </div>
+    <!-- <div class="nav">
+            <button ><img src="./icons8-user-30.png" alt=""></button>
+           <button> <img src="./icons8-heart-30.png" alt=""></button>
+           <button>  <img src="./icons8-bag-64.png" alt=""></button>
+        </div> -->
+    <div id="profile"></div>
+    <div id="wishlist"></div>
+    <div id="bag"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
