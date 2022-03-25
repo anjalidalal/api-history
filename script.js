@@ -3,22 +3,25 @@ const btn2 = document.querySelector(".btn2");
 const btn3 = document.querySelector(".btn3");
 
 function profilePage() {
-    window.history.pushState({}, "", "vertu/profile");
+    history.pushState({}, "", "/profile");
     const p = document.getElementById("profile");
     p.innerHTML = "Profile Page"
     console.log(1)
+    history.forward()
 }
 
 function wishlistPage() {
-    history.pushState({}, "", "vertu/wishlist")
+    history.pushState({}, "", "/wishlist")
     const w = document.getElementById("wishlist");
     w.innerHTML = "Wishlist Page"
     console.log(2)
+    history.forward()
 }
 
 function bagPage(){
-    history.pushState({}, "", "vertu/bag");
+    history.pushState({}, "", "/bag");
     const b = document.getElementById("bag");
     b.innerHTML = " My Bag Page"
+    history.back()
     console.log(3)
 }
